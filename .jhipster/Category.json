@@ -1,0 +1,19 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "rus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "en",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170528144243",
+    "entityTableName": "category",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "no"
+}

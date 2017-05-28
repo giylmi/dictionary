@@ -1,0 +1,25 @@
+{
+    "dictionaryApp": {
+        "word" : {
+            "home": {
+                "title": "Words",
+                "createLabel": "Создать новый Word",
+                "createOrEditLabel": "Создать или отредактировать Word",
+                "search": "Найти Word"
+            },
+            "created": "Новый Word создан с идентификатором {{ param }}",
+            "updated": "Word обновлен с идентификатором {{ param }}",
+            "deleted": "Word удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить Word {{ id }}?"
+            },
+            "detail": {
+                "title": "Word"
+            },
+            "rus": "Rus",
+            "en": "En",
+            "definition": "Definition",
+            "category": "Category"
+        }
+    }
+}

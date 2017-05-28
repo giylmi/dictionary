@@ -1,0 +1,19 @@
+entity Category {
+  rus String
+  en String
+}
+
+entity Word {
+  rus String
+  en String
+  definition String
+}
+
+relationship ManyToOne {
+  Word{category} to Category
+}
+
+// Set pagination options
+paginate Word with pagination
+
+dto * with mapstruct

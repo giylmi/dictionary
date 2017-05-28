@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "category",
+            "otherEntityName": "category",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "rus",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "en",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "definition",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170528144244",
+    "entityTableName": "word",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "no"
+}
