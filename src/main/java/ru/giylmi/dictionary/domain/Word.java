@@ -30,7 +30,7 @@ public class Word implements Serializable {
     @Column(name = "definition")
     private String definition;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Category category;
 
     public Long getId() {

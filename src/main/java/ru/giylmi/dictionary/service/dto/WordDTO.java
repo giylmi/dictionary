@@ -19,7 +19,7 @@ public class WordDTO implements Serializable {
 
     private String definition;
 
-    private Long categoryId;
+    private CategoryDTO cat;
 
     public Long getId() {
         return id;
@@ -53,12 +53,12 @@ public class WordDTO implements Serializable {
         this.definition = definition;
     }
 
-    public Long getCategoryId() {
-        return categoryId;
+    public CategoryDTO getCat() {
+        return cat;
     }
 
-    public void setCategoryId(Long categoryId) {
-        this.categoryId = categoryId;
+    public void setCat(CategoryDTO cat) {
+        this.cat = cat;
     }
 
     @Override

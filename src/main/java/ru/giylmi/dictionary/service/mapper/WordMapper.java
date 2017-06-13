@@ -10,10 +10,10 @@ import org.mapstruct.*;
  */
 @Mapper(componentModel = "spring", uses = {CategoryMapper.class, })
 public interface WordMapper extends EntityMapper <WordDTO, Word> {
-    @Mapping(source = "category.id", target = "categoryId")
-    WordDTO toDto(Word word); 
-    @Mapping(source = "categoryId", target = "category")
-    Word toEntity(WordDTO wordDTO); 
+    @Mapping(source = "category", target = "cat")
+    WordDTO toDto(Word word);
+    @Mapping(source = "cat", target = "category")
+    Word toEntity(WordDTO wordDTO);
     /**
      * generating the fromId for all mappers if the databaseType is sql, as the class has relationship to it might need it, instead of
      * creating a new attribute to know if the entity has any relationship from some other entity
@@ -21,7 +21,7 @@ public interface WordMapper extends EntityMapper <WordDTO, Word> {
      * @param id id of the entity
      * @return the entity instance
      */
-     
+
     default Word fromId(Long id) {
         if (id == null) {
             return null;
